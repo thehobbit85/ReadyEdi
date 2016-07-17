@@ -9,7 +9,7 @@ Main components
 }
 
 .no-touch #cd-vertical-nav {
-  z-index: 2;
+  z-index: 20;
   right: 5vw;
   top: 100%;
   bottom: auto;

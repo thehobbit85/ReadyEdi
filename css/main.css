@@ -183,6 +183,52 @@ ol, ul {
   top:2vh;
 }
 
+.drone_model {
+  position: absolute;
+  max-width:50%;
+  max-height:50%;
+}
+
+#model1 {
+  z-index: 4;
+  margin-left: 25%;
+  margin-top: 10%;
+}
+
+#model2 {
+  z-index: 5;
+  margin-left: 7%;
+  margin-top: 13%;
+}
+
+#model3 {
+  z-index: 3;
+  margin-left: 14.5%;
+  margin-top: 13.5%;
+  transform: rotate(1deg);
+}
+
+#model4 {
+  z-index: 2;
+  margin-left: 16%;
+  margin-top: 17%;
+  transform: rotate(3.5deg);
+}
+
+#model5 {
+  z-index: 1;
+  margin-left: 14%;
+  margin-top: 17.5%;
+  transform: rotate(5deg);
+}
+
+#model6 {
+  z-index: 0;
+  margin-top: 18%;
+  margin-left: 13%;
+  transform: rotate(7deg);
+}
+
 @media screen and (max-width: 1000px) {
   .topMenu {
     top:1vh;
@@ -204,6 +250,3 @@ ol, ul {
     top:1.5vh;
   }
 }
-
-
-
