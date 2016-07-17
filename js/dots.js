@@ -30,7 +30,6 @@ jQuery(document).ready(function($){
 
 	function updateNavigation() {
 		contentSections.each(function(){
-      console.log('this', this)
 			$this = $(this);
 			var activeSection = $('#cd-vertical-nav a[href="#'+$this.attr('id')+'"]').data('number') - 1;
 			if ( ( $this.offset().top - $(window).height()/2 < $(window).scrollTop() ) && ( $this.offset().top + $this.height() - $(window).height()/2 > $(window).scrollTop() ) ) {

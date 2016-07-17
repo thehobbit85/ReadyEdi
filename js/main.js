@@ -14,7 +14,7 @@ $(function () {
     .setPin("#preorder")
     .addTo(controller);
 
-    var scene3 = new ScrollMagic.Scene({triggerElement: "#step", triggerHook: 0, duration: "350%"})
+    var scene3 = new ScrollMagic.Scene({triggerElement: "#step", triggerHook: 0, duration: "400%"})
     .setPin("#cd-vertical-nav")
     .addTo(controller);
 
