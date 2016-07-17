@@ -23,20 +23,26 @@
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-    <header id="theHeader">
+    <div id="topBar" class="container-fluid navbar-custom"></div>
+
+    <div id="topMenu" class="container">
+      <div class="row">
+        <a id="logo" class="col-lg-2" href="#"><img class=".img-responsive" height="50px" src="./img/ReadyEDI-LOGO.png"></a>
+        <form id="preorder" class="col-lg-2" role="form">
+          <button type="submit" class="btn btn-custom">Preorder</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- <header id="theHeader">
       <nav class="navbar navbar-custom container-full" role="navigation">
-        <div class="container">
-          <a id="logo" class="navbar-brand" href="#"><img class=".img-responsive" height="50px" src="./img/ReadyEDI-LOGO.png"></a>
-          <form id="preorder" class="navbar-form navbar-right navbar-form-custom" role="form">
-            <button type="submit" class="btn btn-custom">Preorder</button>
-          </form>
-        </div>
+
       </nav>
-    </header>
+    </header> -->
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="container container-full">
-      <video class="container-full" autoplay loop>
+    <div class="container-full container">
+      <video class="container-full" loop>
         <source src="./video/DanielRace.mp4" type="video/mp4">
       </video>
     </div>
@@ -85,7 +91,7 @@
     <div id="bottom_plate" class="container emptySpace cd-section"></div>
     <div id="end_model" class="container emptySpace cd-section"></div>
 
-    <div id="awards" class="container awards container-full">
+    <div id="awards" class="container-fluid awards">
       <div class="row">
         <div class="winner">Winner Of Awards</div>
       </div>
@@ -122,7 +128,7 @@
     </div>
 
     <footer>
-      <div class="navbar navbar-default navbar-custom container-full footer-nav">
+      <div class="navbar navbar-default navbar-custom container-fluid footer-nav">
         <div class="container">
           <p>&copy; Company 2015</p>
         </div>

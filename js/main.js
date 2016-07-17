@@ -6,15 +6,8 @@ $('video').click(function () {
 
 $(function () {
     // build scene
-    var scene = new ScrollMagic.Scene()
-    .setPin("#logo")
-    .addTo(controller);
 
-    var scene2 = new ScrollMagic.Scene()
-    .setPin("#preorder")
-    .addTo(controller);
-
-    var scene3 = new ScrollMagic.Scene({triggerElement: "#step", triggerHook: 0, duration: "400%"})
+    var scene = new ScrollMagic.Scene({triggerElement: "#step", triggerHook: 0, duration: "400%"})
     .setPin("#cd-vertical-nav")
     .addTo(controller);
 

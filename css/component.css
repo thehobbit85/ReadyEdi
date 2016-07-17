@@ -10,7 +10,7 @@ Main components
 
 .no-touch #cd-vertical-nav {
   z-index: 2;
-  right: 10vw;
+  right: 5vw;
   top: 100%;
   bottom: auto;
   -webkit-transform: translateY(-50%);
@@ -19,6 +19,13 @@ Main components
   -o-transform: translateY(-50%);
   transform: translateY(-50%);
 }
+
+@media screen and (max-width: 1000px) {
+    .no-touch #cd-vertical-nav {
+      right: 0vw;
+    }
+}
+
 .no-touch #cd-vertical-nav li {
   text-align: right;
 }
