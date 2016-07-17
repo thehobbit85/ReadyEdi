@@ -11,4 +11,9 @@ $(function () {
     .setPin("#cd-vertical-nav")
     .addTo(controller);
 
-});
+})
+
+$('#preorderForm').modal({
+    backdrop: 'static',
+    keyboard: false
+})
