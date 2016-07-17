@@ -155,14 +155,12 @@ ol, ul {
 
 
 #logo {
-  position: absolute;
-  left: 0px;
-  top: 0px;
+  position: inherit;
+  left: 17vw;
 }
 #preorder {
-  position: absolute;
-  right: 0px;
-  top: 0px;
+  position: inherit;
+  right: 17vw;
 }
 
 #info {
@@ -179,9 +177,33 @@ ol, ul {
   z-index: auto;
 }
 
-#topMenu {
+.topMenu {
   z-index: 999;
   position: fixed;
+  top:2vh;
 }
+
+@media screen and (max-width: 1000px) {
+  .topMenu {
+    top:1vh;
+  }
+  #logo {
+    left: 7vw;
+  }
+  #preorder {
+    right: 7vw;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  #logo {
+    left: 3vw;
+  }
+  #preorder {
+    right: 3vw;
+    top:1.5vh;
+  }
+}
+
 
 
