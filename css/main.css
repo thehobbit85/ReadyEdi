@@ -1,0 +1,167 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+ol, ul {
+  list-style: none;
+  color: black;
+}
+
+body {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+.vertical-center {
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one :-)       */
+
+  display: flex;
+  align-items: center;
+}
+
+.navbar-custom {
+  background: #94000C; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#94000C, #480106); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#94000C, #480106); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#94000C, #480106); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#94000C, #480106); /* Standard syntax */
+  border-radius: 0;
+  height: 10vh;
+  margin-bottom: 0px;
+  color: #f4f4f4;
+  border-width: 0px;
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-brand:hover,
+.navbar-custom .navbar-brand:focus {
+    color: #FFF;
+}
+
+.navbar-custom .navbar-nav > li > a {
+    color: #FFF;
+}
+
+.navbar-custom .navbar-nav > li > a:hover,
+.navbar-custom .navbar-nav > li > a:focus {
+    background-color: #AA0000;
+}
+
+.navbar-custom .navbar-nav > .active > a,
+.navbar-custom .navbar-nav > .active > a:hover,
+.navbar-custom .navbar-nav > .active > a:focus {
+    color: #FFF;
+    background-color: #AA0000;
+}
+
+.navbar-custom .navbar-text {
+    color: #FFF;
+}
+
+.navbar-custom .navbar-toggle {
+    border-color: #AA0000;
+}
+
+.navbar-custom .navbar-toggle:hover,
+.navbar-custom .navbar-toggle:focus {
+    background-color: #AA0000;
+}
+
+.navbar-custom .navbar-toggle .icon-bar {
+    background-color: #FFF;
+}
+
+.btn-custom {
+  background: #181818; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#181818, #292526); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#181818, #292526); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#181818, #292526); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#181818, #292526); /* Standard syntax */
+  color: #f4f4f4;
+  float: right;
+  padding-right: 40px;
+  padding-left: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.awards {
+  background: #5e5e5e; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#5e5e5e, #414141); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#5e5e5e, #414141); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#5e5e5e, #414141); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#5e5e5e, #414141); /* Standard syntax */
+  height: 250px;
+  text-align: center;
+  color: #f4f4f4;
+  font-size: 28px;
+}
+
+.container-full {
+  margin: 0 auto;
+  width: 100%;
+  padding: 0px;
+}
+
+.container-full-height {
+  margin: 0 auto;
+  height: 100%;
+}
+
+.video {
+  object-fit: fill;
+}
+
+.footer-custom {
+  background: #94000C; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#94000C, #80050A); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#94000C, #80050A); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#94000C, #80050A); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#94000C, #80050A); /* Standard syntax */
+  border-color: #AA0000;
+  border-radius: 0;
+  height: 10%;
+}
+
+.winner {
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+.navbar-form-custom {
+  margin-top: -3.5vh;
+}
+
+.vertical-center {
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one :-)       */
+
+  display: flex;
+  align-items: center;
+}
+
+.emptySpace {
+  height: 100vh;
+}
+
+.emptySpaceHalf {
+  height: 50vh;
+  z-index: auto;
+}
+
+
+#logo {
+  z-index: 999;
+}
+#preorder {
+  z-index: 999;
+}
+
+#info {
+  margin-top: 22vh;
+  margin-bottom: 14vh;
+  text-align: center;
+}
+
+
