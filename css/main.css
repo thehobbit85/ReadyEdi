@@ -8,6 +8,10 @@ ol, ul {
   color: black;
 }
 
+body {
+  background: #ecebeb;
+}
+
 .vertical-center {
   min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
   min-height: 100vh; /* These two lines are counted as one :-)       */
@@ -17,11 +21,11 @@ ol, ul {
 }
 
 .navbar-custom {
-  background: #94000C; /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(#94000C, #480106); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(#94000C, #480106); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(#94000C, #480106); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(#94000C, #480106); /* Standard syntax */
+  background: #96000C; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#96000C, #7f000A); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#96000C, #7f000A); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#96000C, #7f000A); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#96000C, #7f000A); /* Standard syntax */
   border-radius: 0;
   height: 10vh;
   margin-bottom: 0px;
@@ -87,14 +91,14 @@ ol, ul {
 }
 
 .awards {
-  background: #5e5e5e; /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(#5e5e5e, #414141); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(#5e5e5e, #414141); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(#5e5e5e, #414141); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(#5e5e5e, #414141); /* Standard syntax */
+  background: #453f3c; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#453f3c, #211a17); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#453f3c, #211a17); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#453f3c, #211a17); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#453f3c, #211a17); /* Standard syntax */
   min-height: 250px;
   text-align: center;
-  color: #f4f4f4;
+  color: #ffffff;
   font-size: 28px;
 }
 .awards .col-md-3 {
@@ -117,11 +121,11 @@ ol, ul {
 }
 
 .footer-custom {
-  background: #94000C; /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(#94000C, #80050A); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(#94000C, #80050A); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(#94000C, #80050A); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(#94000C, #80050A); /* Standard syntax */
+  background: #96000C; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#96000C, #7f000A); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#96000C, #7f000A); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#96000C, #7f000A); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#96000C, #7f000A); /* Standard syntax */
   border-color: #AA0000;
   border-radius: 0;
   height: 10%;
