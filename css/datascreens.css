@@ -1,0 +1,15 @@
+.number_banner {
+  position: absolute;
+  max-height: 20vh;
+  margin-top: 25vh;
+}
+
+.emptySpace {
+  height: 100vh;
+  background-image: url('./../img/drone/bk.jpg');
+}
+
+.emptySpaceHalf {
+  height: 50vh;
+  z-index: auto;
+}

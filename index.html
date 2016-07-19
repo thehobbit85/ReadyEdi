@@ -14,6 +14,8 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/drone_model.css">
+        <link rel="stylesheet" href="css/datascreens.css">
         <link rel="stylesheet" type="text/css" href="css/component.css" />
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
@@ -23,56 +25,32 @@
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-    <div id="topBar" class="container-fluid navbar-custom"></div>
-
-    <div class="container topMenu">
-        <a id="logo" href="#"><img class=".img-responsive" height="50px" src="./img/ReadyEDI-LOGO.png"></a>
-        <button id="preorder" type="button" class="btn btn-custom" data-toggle="modal" data-target="#preorderForm">Preorder</button>
+    <div class="container-fixed">
+      <div class="container topMenu">
+          <a id="logo" href="#"><img height="50px" src="./img/ReadyEDI-LOGO.png"></a>
+          <button id="preorder" type="button" class="btn btn-custom" data-toggle="modal" data-target="#preorderForm">Preorder</button>
       </div>
     </div>
 
-    <!--
-    <div id="preorderForm" class="modal fade" role="dialog">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
-            <h4 class="modal-title">Modal Header</h4>
-          </div>
-          <div class="modal-body">
-            <p>Some text in the modal.</p>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          </div>
-        </div>
+    <div id="topBar" class="container-fluid brand-bar"></div>
 
-      </div>
-    </div>
-    -->
-
-    <!-- <header id="theHeader">
-      <nav class="navbar navbar-custom container-full" role="navigation">
-
-      </nav>
-    </header> -->
-
-    <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="container-full container">
-      <img src="./img/video_placeholder.jpg" class="container-full">
-      <!-- <video class="container-full" loop>
+      <!-- <img src="./img/video_placeholder.jpg" class="container-full"> -->
+      <video class="container-full" loop>
         <source src="./video/DanielRace.mp4" type="video/mp4">
-      </video> -->
+      </video>
     </div>
-    <div class="container">
-      <img class="drone_model" id="model1" src="./img/drone/1.png">
-      <img class="drone_model" id="model2" src="./img/drone/2.png">
-      <img class="drone_model" id="model3" src="./img/drone/3.png">
-      <img class="drone_model" id="model4" src="./img/drone/4.png">
-      <img class="drone_model" id="model5" src="./img/drone/5.png">
-      <img class="drone_model" id="model6" src="./img/drone/6.png">
+    <div class="container drone_model">
+      <img id="model1" src="./img/drone/1.png">
+      <img id="model2" src="./img/drone/2.png">
+      <img id="model3" src="./img/drone/3.png">
+      <img id="model4" src="./img/drone/4.png">
+      <img id="model5" src="./img/drone/5.png">
+      <img id="model6" src="./img/drone/6.png">
     </div>
+
     <div id="start_model" class="container container-full emptySpace cd-section">
+      <img class="number_banner" id="data_num1" src="./img/data/1.jpg">
       <div id="step" class="container-full emptySpaceHalf">
         <nav id="cd-vertical-nav">
           <ul>
@@ -117,15 +95,25 @@
       </div>
     </div>
     <div class="container emptySpace container-full"></div>
-    <div id="top_plate" class="container container-full emptySpace cd-section"></div>
+    <div id="top_plate" class="container container-full emptySpace cd-section">
+      <img class="number_banner" id="data_num2" src="./img/data/2.jpg">
+    </div>
     <div class="container container-full emptySpace"></div>
-    <div id="screws" class="container container-full emptySpace cd-section"></div>
+    <div id="screws" class="container container-full emptySpace cd-section">
+      <img class="number_banner" id="data_num3" src="./img/data/3.jpg">
+    </div>
     <div class="container container-full emptySpace"></div>
-    <div id="pdb" class="container container-full emptySpace cd-section"></div>
+    <div id="pdb" class="container container-full emptySpace cd-section">
+      <img class="number_banner" id="data_num4" src="./img/data/4.jpg">
+    </div>
     <div class="container container-full emptySpace"></div>
-    <div id="bottom_plate" class="container container-full emptySpace cd-section"></div>
+    <div id="bottom_plate" class="container container-full emptySpace cd-section">
+      <img class="number_banner" id="data_num5" src="./img/data/5.jpg">
+    </div>
     <div class="container container-full emptySpace"></div>
-    <div id="end_model" class="container container-full emptySpace cd-section"></div>
+    <div id="end_model" class="container container-full emptySpace cd-section">
+      <img class="number_banner" id="data_num6" src="./img/data/6.jpg">
+    </div>
     <div class="container container-full emptySpace"></div>
 
     <div id="awards" class="container-fluid awards">
@@ -150,7 +138,6 @@
     </div>
 
     <div id="info" class="container">
-      <!-- Example row of columns -->
       <div class="row">
         <div class="col-md-4">
           <img src="./img/info/1.png">
@@ -165,13 +152,32 @@
     </div>
 
     <footer>
-      <div class="navbar navbar-default navbar-custom container-fluid footer-nav">
+      <div class="navbar navbar-default brand-bar container-fluid">
         <div class="container">
           <p>&copy; Company 2015</p>
         </div>
       </div>
     </footer>
 
+    <!--
+    <div id="preorderForm" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Modal Header</h4>
+          </div>
+          <div class="modal-body">
+            <p>Some text in the modal.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 

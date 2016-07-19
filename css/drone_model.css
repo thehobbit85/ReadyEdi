@@ -1,0 +1,49 @@
+.drone_model {
+  position:relative;
+}
+
+.drone_model img {
+  position: absolute;
+  width:50vw;
+  /*height:50vh;*/
+}
+
+#model1 {
+  z-index: 4;
+  left: 22vw;
+  top: 20.3vh;
+}
+
+#model2 {
+  z-index: 5;
+  left: 4vw;
+  top: 25.5vh;
+}
+
+#model3 {
+  z-index: 3;
+  left: 13.5vw;
+  top: 26.5vh;
+  transform: rotate(1deg);
+}
+
+#model4 {
+  z-index: 2;
+  left: 16vw;
+  top: 31vh;
+  transform: rotate(3.5deg);
+}
+
+#model5 {
+  z-index: 1;
+  left: 14vw;
+  top: 31.5vh;
+  transform: rotate(5deg);
+}
+
+#model6 {
+  z-index: 0;
+  top: 32vh;
+  left: 13vw;
+  transform: rotate(7deg);
+}

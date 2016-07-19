@@ -12,15 +12,24 @@ body {
   background: #ecebeb;
 }
 
-.vertical-center {
-  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
-  min-height: 100vh; /* These two lines are counted as one :-)       */
-
-  display: flex;
-  align-items: center;
+.container-full {
+  margin: 0 auto;
+  width: 100%;
+  padding: 0px;
 }
 
-.navbar-custom {
+.container-fixed {
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+}
+
+.container-full-height {
+  margin: 0 auto;
+  height: 100%;
+}
+
+.brand-bar {
   background: #96000C; /* For browsers that do not support gradients */
   background: -webkit-linear-gradient(#96000C, #7f000A); /* For Safari 5.1 to 6.0 */
   background: -o-linear-gradient(#96000C, #7f000A); /* For Opera 11.1 to 12.0 */
@@ -33,46 +42,63 @@ body {
   border-width: 0px;
 }
 
-.footer-nav {
+#topBar {
+  z-index: auto;
+}
+
+.topMenu {
   height: 10vh;
 }
 
-.navbar-custom .navbar-brand,
-.navbar-custom .navbar-brand:hover,
-.navbar-custom .navbar-brand:focus {
+#logo {
+  float: left;
+  margin-left: 17%;
+  margin-top: 1.5%;
+}
+#preorder {
+  float: right;
+  margin-right: 17%;
+  margin-top: 2%;
+}
+
+.vertical-center {
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one :-)       */
+
+  display: flex;
+  align-items: center;
+}
+
+.brand-bar .navbar-nav > li > a {
     color: #FFF;
 }
 
-.navbar-custom .navbar-nav > li > a {
-    color: #FFF;
-}
-
-.navbar-custom .navbar-nav > li > a:hover,
-.navbar-custom .navbar-nav > li > a:focus {
+.brand-bar .navbar-nav > li > a:hover,
+.brand-bar .navbar-nav > li > a:focus {
     background-color: #AA0000;
 }
 
-.navbar-custom .navbar-nav > .active > a,
-.navbar-custom .navbar-nav > .active > a:hover,
-.navbar-custom .navbar-nav > .active > a:focus {
+.brand-bar .navbar-nav > .active > a,
+.brand-bar .navbar-nav > .active > a:hover,
+.brand-bar .navbar-nav > .active > a:focus {
     color: #FFF;
     background-color: #AA0000;
 }
 
-.navbar-custom .navbar-text {
+.brand-bar .navbar-text {
     color: #FFF;
 }
 
-.navbar-custom .navbar-toggle {
+.brand-bar .navbar-toggle {
     border-color: #AA0000;
 }
 
-.navbar-custom .navbar-toggle:hover,
-.navbar-custom .navbar-toggle:focus {
+.brand-bar .navbar-toggle:hover,
+.brand-bar .navbar-toggle:focus {
     background-color: #AA0000;
 }
 
-.navbar-custom .navbar-toggle .icon-bar {
+.brand-bar .navbar-toggle .icon-bar {
     background-color: #FFF;
 }
 
@@ -105,32 +131,6 @@ body {
   margin-bottom: 10px;
 }
 
-.container-full {
-  margin: 0 auto;
-  width: 100%;
-  padding: 0px;
-}
-
-.container-full-height {
-  margin: 0 auto;
-  height: 100%;
-}
-
-.video {
-  object-fit: fill;
-}
-
-.footer-custom {
-  background: #96000C; /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(#96000C, #7f000A); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(#96000C, #7f000A); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(#96000C, #7f000A); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(#96000C, #7f000A); /* Standard syntax */
-  border-color: #AA0000;
-  border-radius: 0;
-  height: 10%;
-}
-
 .winner {
   padding-top: 20px;
   padding-bottom: 30px;
@@ -148,26 +148,6 @@ body {
   align-items: center;
 }
 
-.emptySpace {
-  height: 100vh;
-  background-image: url('./../img/drone/bk.jpg')
-}
-
-.emptySpaceHalf {
-  height: 50vh;
-  z-index: auto;
-}
-
-
-#logo {
-  position: inherit;
-  left: 17vw;
-}
-#preorder {
-  position: inherit;
-  right: 17vw;
-}
-
 #info {
   margin-top: 22vh;
   margin-bottom: 15vh;
@@ -178,80 +158,25 @@ body {
   margin-bottom: 10px;
 }
 
-#topBar {
-  z-index: auto;
-}
-
-.topMenu {
-  z-index: 999;
-  position: fixed;
-  top:2vh;
-}
-
-.drone_model {
-  position: absolute;
-  max-width:50%;
-  max-height:50%;
-}
-
-#model1 {
-  z-index: 4;
-  margin-left: 25%;
-  margin-top: 10%;
-}
-
-#model2 {
-  z-index: 5;
-  margin-left: 7%;
-  margin-top: 13%;
-}
-
-#model3 {
-  z-index: 3;
-  margin-left: 14.5%;
-  margin-top: 13.5%;
-  transform: rotate(1deg);
-}
-
-#model4 {
-  z-index: 2;
-  margin-left: 16%;
-  margin-top: 17%;
-  transform: rotate(3.5deg);
-}
-
-#model5 {
-  z-index: 1;
-  margin-left: 14%;
-  margin-top: 17.5%;
-  transform: rotate(5deg);
-}
-
-#model6 {
-  z-index: 0;
-  margin-top: 18%;
-  margin-left: 13%;
-  transform: rotate(7deg);
-}
-
 @media screen and (max-width: 1000px) {
   .topMenu {
-    top:1vh;
+    top: 1vh;
   }
   #logo {
-    left: 7vw;
+    margin-left: 7%;
   }
   #preorder {
-    right: 7vw;
+    margin-right: 7%;
   }
 }
 
 @media screen and (max-width: 450px) {
   #logo {
-    left: 3vw;
+    margin-left: 3%;
+    margin-top: 3%;
   }
   #preorder {
-    right: 3vw;
-    top:1.5vh;
+    margin-right: 3%;
+    margin-top: 3%;
   }
 }
