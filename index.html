@@ -18,21 +18,24 @@
         <link rel="stylesheet" href="css/datascreens.css">
         <link rel="stylesheet" type="text/css" href="css/component.css" />
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.3/velocity.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.3/velocity.ui.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.velocity.js"></script>
     </head>
     <body>
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-    <div class="container-fixed">
-      <div class="container topMenu">
-          <a id="logo" href="#"><img src="./img/ReadyEDI-LOGO.png"><div class="logo_layer"></div></a>
-          <button id="preorder" type="button" class="btn btn-custom" data-toggle="modal" data-target="#preorderForm">Preorder</button>
+    <nav class="navbar navbar-default navbar-fixed-top brand-bar">
+      <div class="container">
+        <div class="navbar-header">
+            <a id="logo" href="#"><img src="./img/ReadyEDI-LOGO.png"></a>
+            <button id="preorder" type="button" class="btn btn-custom" data-toggle="modal" data-target="#preorderForm">Preorder</button>
+          </div>
       </div>
-    </div>
-
-    <div id="topBar" class="container-fluid brand-bar"></div>
+    </nav>
 
     <div class="container-full container">
       <img src="./img/video_placeholder.jpg" class="container-full">
@@ -40,81 +43,98 @@
         <source src="./video/DanielRace.mp4" type="video/mp4">
       </video> -->
     </div>
+
     <div class="container drone_model">
-      <img id="model1" src="./img/drone/1.png">
-      <img id="model2" src="./img/drone/2.png">
-      <img id="model3" src="./img/drone/3.png">
-      <img id="model4" src="./img/drone/4.png">
-      <img id="model5" src="./img/drone/5.png">
-      <img id="model6" src="./img/drone/6.png">
+      <img id="modelbk" src="./img/drone/bk.jpg">
+      <img id="top_screws" src="./img/drone/top-screws.png">
+      <img id="top_plate" src="./img/drone/top-plate.png">
+      <img id="front_polls" src="./img/drone/front-polls.png">
+      <img id="camera_holder" src="./img/drone/camera-holder.png">
+      <img id="camera" src="./img/drone/camera.png">
+      <img id="battery_plastic" src="./img/drone/battery-plastic.png">
+      <img id="battey_plate" src="./img/drone/battey-plate.png">
+      <img id="battery" src="./img/drone/battery.png">
+      <img id="back_polls" src="./img/drone/back-polls.png">
+      <img id="motors" src="./img/drone/motors.png">
+      <img id="main_plate" src="./img/drone/main-plate.png">
+      <img id="antenna" src="./img/drone/antenna.png">
+      <img id="bottom_plastic" src="./img/drone/bottom-plastic.png">
+      <img id="electronics" src="./img/drone/electronics.png">
+      <img id="down_plate" src="./img/drone/down-plate.png">
+      <img id="bottom_screws" src="./img/drone/bottom-screws.png">
     </div>
 
-    <div id="start_model" class="container container-full emptySpace cd-section">
-      <img class="number_banner" id="data_num1" src="./img/data/1.jpg">
-      <div id="step" class="container-full emptySpaceHalf">
+    <div id="moto" class="container container-full emptySpace">
+      <p>
+      FPV RACING IS ABOUT TO CHANGE
+      </p>
+    </div>
+
+    <div class="container container-full zeroHeight cd-section">
+      <div class="container-full emptySpaceHalf">
         <nav id="cd-vertical-nav">
           <ul>
             <li>
-              <a href="#start_model" data-number="1">
+              <a href="#hardware_data" data-number="1">
                 <span class="cd-dot"></span>
-                <span class="cd-label">start_model</span>
+                <span class="cd-label">Hardware</span>
               </a>
             </li>
             <li>
-              <a href="#top_plate" data-number="2">
+              <a href="#battery_chamber_data" data-number="2">
                 <span class="cd-dot"></span>
-                <span class="cd-label">top_plate</span>
+                <span class="cd-label">Battery Chamber</span>
               </a>
             </li>
             <li>
-              <a href="#screws" data-number="3">
+              <a href="#battery_data" data-number="3">
                 <span class="cd-dot"></span>
-                <span class="cd-label">screws</span>
+                <span class="cd-label">Battery</span>
               </a>
             </li>
             <li>
-              <a href="#pdb" data-number="4">
+              <a href="#camera_mount_data" data-number="4">
                 <span class="cd-dot"></span>
-                <span class="cd-label">pdb</span>
+                <span class="cd-label">Camera mount</span>
               </a>
             </li>
             <li>
-              <a href="#bottom_plate" data-number="5">
+              <a href="#main_plate_data" data-number="5">
                 <span class="cd-dot"></span>
-                <span class="cd-label">bottom_plate</span>
+                <span class="cd-label">Main plate</span>
               </a>
             </li>
             <li>
-              <a href="#end_model" data-number="6">
+              <a href="#bottom_chamber_data" data-number="6">
                 <span class="cd-dot"></span>
-                <span class="cd-label">end_model</span>
+                <span class="cd-label">Bottom Chamber</span>
               </a>
             </li>
           </ul>
         </nav>
       </div>
     </div>
-    <div class="container emptySpace container-full"></div>
-    <div id="top_plate" class="container container-full emptySpace cd-section">
+
+    <div id="start" class="container container-full emptySpace"></div>
+
+    <div id="hardware_data" class="container container-full emptySpace cd-section">
+      <img class="number_banner" id="data_num1" src="./img/data/1.jpg">
+    </div>
+    <div id="battery_chamber_data" class="container container-full emptySpace cd-section">
       <img class="number_banner" id="data_num2" src="./img/data/2.jpg">
     </div>
-    <div class="container container-full emptySpace"></div>
-    <div id="screws" class="container container-full emptySpace cd-section">
+    <div id="battery_data" class="container container-full emptySpace cd-section">
       <img class="number_banner" id="data_num3" src="./img/data/3.jpg">
     </div>
-    <div class="container container-full emptySpace"></div>
-    <div id="pdb" class="container container-full emptySpace cd-section">
+    <div id="camera_mount_data" class="container container-full emptySpace cd-section">
       <img class="number_banner" id="data_num4" src="./img/data/4.jpg">
     </div>
-    <div class="container container-full emptySpace"></div>
-    <div id="bottom_plate" class="container container-full emptySpace cd-section">
+    <div id="main_plate_data" class="container container-full emptySpace cd-section">
       <img class="number_banner" id="data_num5" src="./img/data/5.jpg">
     </div>
-    <div class="container container-full emptySpace"></div>
-    <div id="end_model" class="container container-full emptySpace cd-section">
+    <div id="bottom_chamber_data" class="container container-full emptySpace cd-section">
       <img class="number_banner" id="data_num6" src="./img/data/6.jpg">
     </div>
-    <div class="container container-full emptySpace"></div>
 
     <div id="awards" class="container-fluid awards">
       <div class="row">

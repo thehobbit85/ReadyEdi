@@ -1,49 +1,112 @@
 .drone_model {
   position:relative;
+  width: 100vw;
 }
 
 .drone_model img {
   position: absolute;
-  width:50vw;
-  /*height:50vh;*/
+  width:65vw;
 }
 
-#model1 {
-  z-index: 4;
-  left: 22vw;
-  top: 20.3vh;
+#modelbk {
+  z-index: 0;
+  height: 100vh;
+  width: 100vw;
 }
 
-#model2 {
-  z-index: 5;
-  left: 4vw;
+#top_screws {
+  z-index: 16;
+  left: 20vw;
+  top: 25vh;
+}
+
+#top_plate {
+  z-index: 15;
+  left: 20vw;
+  top: 22vh;
+}
+
+#front_polls {
+  z-index: 14;
+  left: 20vw;
+  top: 27.5vh;
+}
+
+#camera_holder {
+  z-index: 13;
+  left: 20vw;
+  top: 14.5vh;
+}
+
+#camera {
+  z-index: 12;
+  left: 20vw;
+  top: 3.5vh;
+}
+
+
+#battery_plastic {
+  z-index: 11;
+  left: 20vw;
+  top: 3.5vh;
+}
+
+#battey_plate {
+  z-index: 10;
+  left: 20vw;
+  top: 15.5vh;
+}
+
+#battery {
+  z-index: 9;
+  left: 20vw;
+  top: 13.5vh;
+}
+
+#back_polls {
+  z-index: 8;
+  left: 20vw;
   top: 25.5vh;
 }
 
-#model3 {
+#motors {
+  z-index: 7;
+  left: 20vw;
+  top: 21.5vh;
+}
+
+#main_plate {
+  z-index: 6;
+  left: 20vw;
+  top: 17.5vh;
+}
+
+#antenna {
+  z-index: 5;
+  left: 20vw;
+  top: 19.5vh;
+}
+
+#bottom_plastic {
+  z-index: 4;
+  left: 20vw;
+  top: 3.5vh;
+}
+
+#electronics {
   z-index: 3;
-  left: 13.5vw;
-  top: 26.5vh;
-  transform: rotate(1deg);
+  left: 20vw;
+  top: 11.5vh;
 }
 
-#model4 {
+#down_plate {
   z-index: 2;
-  left: 16vw;
-  top: 31vh;
-  transform: rotate(3.5deg);
+  left: 20vw;
+  top: -1.5vh;
 }
 
-#model5 {
+#bottom_screws {
   z-index: 1;
-  left: 14vw;
-  top: 31.5vh;
-  transform: rotate(5deg);
-}
-
-#model6 {
-  z-index: 0;
-  top: 32vh;
-  left: 13vw;
-  transform: rotate(7deg);
+  left: 20vw;
+  top: 1.5vh;
 }

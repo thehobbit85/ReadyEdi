@@ -11,18 +11,12 @@ ol, ul {
 body {
   background: #ecebeb;
 }
-
-.logo_layer {
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 0px;
-  background: black;
-  opacity: 0.1;
+.container {
+  padding: 0;
 }
 
 .container-full {
-  margin: 0 auto;
+  margin: 0;
   width: 100%;
   padding: 0px;
 }
@@ -51,19 +45,10 @@ body {
   border-width: 0px;
 }
 
-#topBar {
-  z-index: auto;
-}
-
-.topMenu {
-  height: 10vh;
-}
-
 #logo {
-  position: relative;
-  float: left;
-  margin-left: 17%;
-  margin-top: 1.5%;
+  position: absolute;
+  left: 20vw;
+  top: 1vw;
 }
 
 #logo img {
@@ -71,9 +56,9 @@ body {
 }
 
 #preorder {
-  float: right;
-  margin-right: 17%;
-  margin-top: 2%;
+  position: absolute;
+  right: 20vw;
+  top: 1.5vw;
 }
 
 .vertical-center {
