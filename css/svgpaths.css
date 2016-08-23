@@ -1,0 +1,65 @@
+#hardware_line_top {
+  margin-top: 1vh;
+  margin-left: 15vw;
+}
+
+#hardware_line_bottom {
+  margin-top: 30vh;
+  margin-left: 20vw;
+  transform: rotate(180deg);
+}
+
+#battery_chamber_line_top {
+  margin-top: 1vh;
+  margin-left: 15vw;
+}
+
+#battery_chamber_line_bottom {
+  margin-top: 30vh;
+  margin-left: 20vw;
+  transform: rotate(180deg);
+}
+
+#battery_line_top {
+  margin-top: 1vh;
+  margin-left: 15vw;
+}
+
+#battery_line_bottom {
+  margin-top: 30vh;
+  margin-left: 20vw;
+  transform: rotate(180deg);
+}
+
+#camera_mount_line_top {
+  margin-top: 1vh;
+  margin-left: 15vw;
+}
+
+#camera_mount_line_bottom {
+  margin-top: 30vh;
+  margin-left: 20vw;
+  transform: rotate(180deg);
+}
+
+#main_plate_line_top {
+  margin-top: 1vh;
+  margin-left: 15vw;
+}
+
+#main_plate_line_bottom {
+  margin-top: 30vh;
+  margin-left: 20vw;
+  transform: rotate(180deg);
+}
+
+#bottom_chamber_line_top {
+  margin-top: 1vh;
+  margin-left: 15vw;
+}
+
+#bottom_chamber_line_bottom {
+  margin-top: 30vh;
+  margin-left: 20vw;
+  transform: rotate(180deg);
+}
