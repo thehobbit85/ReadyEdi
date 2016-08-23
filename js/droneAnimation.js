@@ -1,5 +1,5 @@
 var controller = new ScrollMagic.Controller()
-var numberOfScenes = "700%"
+var numberOfScenes = "750%"
 
 $(function () {
 
@@ -70,78 +70,64 @@ $(function () {
   .setPin("#bottom_screws")
   .addTo(controller)
 
-  // Move dron to side an minimize
+  // Move drone to side and minimize
   var animation = {translateX: "20vw", width: "65vw", translateY: "2vh"}
-  var animationDuration = "easeOutSine"
-  triggerElement = {triggerElement: "#hardware_data", triggerHook: 1}
+  var animationDuration = { duration: 1500, ease: "easeInSine"}
+  triggerElement = {triggerElement: "#hardware_data", triggerHook: 0.8}
 
   var start1 = new ScrollMagic.Scene(triggerElement)
   .setVelocity("#top_screws", animation, animationDuration)
-  .addIndicators()
   .addTo(controller)
   var start2 = new ScrollMagic.Scene(triggerElement)
   .setVelocity("#top_plate", animation, animationDuration)
-  .addIndicators()
   .addTo(controller)
   var start3 = new ScrollMagic.Scene(triggerElement)
   .setVelocity("#front_polls", animation, animationDuration)
-  .addIndicators()
   .addTo(controller)
   var start4 = new ScrollMagic.Scene(triggerElement)
   .setVelocity("#camera_holder", animation, animationDuration)
-  .addIndicators()
   .addTo(controller)
   var start5 = new ScrollMagic.Scene(triggerElement)
   .setVelocity("#camera", animation, animationDuration)
-  .addIndicators()
   .addTo(controller)
   var start6 = new ScrollMagic.Scene(triggerElement)
   .setVelocity("#battery_plastic", animation, animationDuration)
-  .addIndicators()
   .addTo(controller)
   var start7 = new ScrollMagic.Scene(triggerElement)
   .setVelocity("#battey_plate", animation, animationDuration)
-  .addIndicators()
   .addTo(controller)
   var start8 = new ScrollMagic.Scene(triggerElement)
   .setVelocity("#battery", animation, animationDuration)
-  .addIndicators()
   .addTo(controller)
   var start9 = new ScrollMagic.Scene(triggerElement)
   .setVelocity("#back_polls", animation, animationDuration)
-  .addIndicators()
   .addTo(controller)
   var start10 = new ScrollMagic.Scene(triggerElement)
   .setVelocity("#motors", animation, animationDuration)
-  .addIndicators()
   .addTo(controller)
   var start11 = new ScrollMagic.Scene(triggerElement)
   .setVelocity("#main_plate", animation, animationDuration)
-  .addIndicators()
   .addTo(controller)
   var start12 = new ScrollMagic.Scene(triggerElement)
   .setVelocity("#antenna", animation, animationDuration)
-  .addIndicators()
   .addTo(controller)
   var start13 = new ScrollMagic.Scene(triggerElement)
   .setVelocity("#bottom_plastic", animation, animationDuration)
-  .addIndicators()
   .addTo(controller)
   var start14 = new ScrollMagic.Scene(triggerElement)
   .setVelocity("#electronics", animation, animationDuration)
-  .addIndicators()
   .addTo(controller)
   var start15 = new ScrollMagic.Scene(triggerElement)
   .setVelocity("#down_plate", animation, animationDuration)
-  .addIndicators()
   .addTo(controller)
   var start16 = new ScrollMagic.Scene(triggerElement)
   .setVelocity("#bottom_screws", animation, animationDuration)
-  .addIndicators()
   .addTo(controller)
 
+  //////////////////////////// Opacity Scenes!!!!!!! ////////////////////////////
+  animationDuration = {duration: "fast", ease: "easeInSine"}
   // Hardware scene
-  triggerElement = {triggerElement: "#hardware_data", triggerHook: 0}
+  triggerElement = {triggerElement: "#battery_chamber_data", triggerHook: 0.7}
   var hardware1 = new ScrollMagic.Scene(triggerElement)
   .setVelocity("#top_screws", {opacity: 1}, animationDuration)
   .addTo(controller)
@@ -192,7 +178,7 @@ $(function () {
   .addTo(controller)
 
   // Battery Chamber scene
-  triggerElement = {triggerElement: "#battery_chamber_data", triggerHook: 0}
+  triggerElement = {triggerElement: "#battery_data", triggerHook: 0.7}
   var battery_chamber1 = new ScrollMagic.Scene(triggerElement)
   .setVelocity("#top_screws", {opacity: 0.3}, animationDuration)
   .addTo(controller)
@@ -243,7 +229,7 @@ $(function () {
   .addTo(controller)
 
   // Battery scene
-  triggerElement = {triggerElement: "#battery_data", triggerHook: 0}
+  triggerElement = {triggerElement: "#camera_mount_data", triggerHook: 0.7}
   var battery1 = new ScrollMagic.Scene(triggerElement)
   .setVelocity("#top_screws", {opacity: 0.3}, animationDuration)
   .addTo(controller)
@@ -294,7 +280,7 @@ $(function () {
   .addTo(controller)
 
   // Camera Mount scene
-  triggerElement = {triggerElement: "#camera_mount_data", triggerHook: 0}
+  triggerElement = {triggerElement: "#main_plate_data", triggerHook: 0.7}
   var camera_mount1 = new ScrollMagic.Scene(triggerElement)
   .setVelocity("#top_screws", {opacity: 0.3}, animationDuration)
   .addTo(controller)
@@ -345,7 +331,7 @@ $(function () {
   .addTo(controller)
 
   // Main Plate scene
-  triggerElement = {triggerElement: "#main_plate_data", triggerHook: 0}
+  triggerElement = {triggerElement: "#bottom_chamber_data", triggerHook: 0.7}
   var main_plate1 = new ScrollMagic.Scene(triggerElement)
   .setVelocity("#top_screws", {opacity: 0.3}, animationDuration)
   .addTo(controller)
@@ -396,7 +382,7 @@ $(function () {
   .addTo(controller)
 
   // Bottom Chamber scene
-  triggerElement = {triggerElement: "#bottom_chamber_data", triggerHook: 0}
+  triggerElement = {triggerElement: "#end", triggerHook: 0.7}
   var bottom_chamber1 = new ScrollMagic.Scene(triggerElement)
   .setVelocity("#top_screws", {opacity: 0.3}, animationDuration)
   .addTo(controller)
