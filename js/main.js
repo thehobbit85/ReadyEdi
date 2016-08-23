@@ -84,7 +84,7 @@ $(function () {
 
   // Start scene
   var animation = {translateX: "20vw", width: "65vw", translateY: "2vh"}
-  var animationDuration = "easeInSine"
+  var animationDuration = "easeOutSine"
   triggerElement = {triggerElement: "#start"}
 
   var start1 = new ScrollMagic.Scene(triggerElement)
@@ -569,6 +569,23 @@ $(function () {
   .addTo(controller)
   var main_plate_line_bottom_scene = new ScrollMagic.Scene({triggerElement: "#main_plate_data", triggerHook: 0, duration: "30%"})
   .setPin("#main_plate_line_bottom")
+  .addTo(controller)
+
+  //Pin number tags
+  var num1_scene = new ScrollMagic.Scene({triggerElement: "#hardware_data", triggerHook: 0, duration: "30%"})
+  .setPin("#data_num1")
+  .addTo(controller)
+  var num2_scene = new ScrollMagic.Scene({triggerElement: "#battery_chamber_data", triggerHook: 0, duration: "30%"})
+  .setPin("#data_num2")
+  .addTo(controller)
+  var num3_scene = new ScrollMagic.Scene({triggerElement: "#battery_data", triggerHook: 0, duration: "30%"})
+  .setPin("#data_num3")
+  .addTo(controller)
+  var num4_scene = new ScrollMagic.Scene({triggerElement: "#camera_mount_data", triggerHook: 0, duration: "30%"})
+  .setPin("#data_num4")
+  .addTo(controller)
+  var num5_scene = new ScrollMagic.Scene({triggerElement: "#main_plate_data", triggerHook: 0, duration: "30%"})
+  .setPin("#data_num5")
   .addTo(controller)
 })
 
