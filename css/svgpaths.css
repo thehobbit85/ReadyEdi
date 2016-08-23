@@ -1,65 +1,100 @@
+svg {
+  stroke:#ca2026;
+  stroke-width: 0.8;
+}
+
 #hardware_line_top {
+  width: 580px;
+  height: 400px;
+  position: absolute;
   margin-top: 1vh;
   margin-left: 15vw;
 }
 
 #hardware_line_bottom {
-  margin-top: 30vh;
-  margin-left: 20vw;
-  transform: rotate(180deg);
+  width: 580px;
+  height: 400px;
+  position: absolute;
+  margin-top: 30.5vh;
+  margin-left: 13.5vw;
 }
 
 #battery_chamber_line_top {
+  width: 580px;
+  height: 400px;
+  position: absolute;
   margin-top: 1vh;
   margin-left: 15vw;
 }
 
 #battery_chamber_line_bottom {
-  margin-top: 30vh;
-  margin-left: 20vw;
-  transform: rotate(180deg);
+  width: 580px;
+  height: 400px;
+  position: absolute;
+  margin-top: 30.5vh;
+  margin-left: 13.5vw;
 }
 
 #battery_line_top {
+  width: 580px;
+  height: 400px;
+  position: absolute;
   margin-top: 1vh;
   margin-left: 15vw;
 }
 
 #battery_line_bottom {
-  margin-top: 30vh;
-  margin-left: 20vw;
-  transform: rotate(180deg);
+  width: 580px;
+  height: 400px;
+  position: absolute;
+  margin-top: 30.5vh;
+  margin-left: 13.5vw;
 }
 
 #camera_mount_line_top {
+  width: 580px;
+  height: 400px;
+  position: absolute;
   margin-top: 1vh;
   margin-left: 15vw;
 }
 
 #camera_mount_line_bottom {
-  margin-top: 30vh;
-  margin-left: 20vw;
-  transform: rotate(180deg);
+  width: 580px;
+  height: 400px;
+  position: absolute;
+  margin-top: 30.5vh;
+  margin-left: 13.5vw;
 }
 
 #main_plate_line_top {
+  width: 580px;
+  height: 400px;
+  position: absolute;
   margin-top: 1vh;
   margin-left: 15vw;
 }
 
 #main_plate_line_bottom {
-  margin-top: 30vh;
-  margin-left: 20vw;
-  transform: rotate(180deg);
+  width: 580px;
+  height: 400px;
+  position: absolute;
+  margin-top: 30.5vh;
+  margin-left: 13.5vw;
 }
 
 #bottom_chamber_line_top {
+  width: 580px;
+  height: 400px;
+  position: absolute;
   margin-top: 1vh;
   margin-left: 15vw;
 }
 
 #bottom_chamber_line_bottom {
-  margin-top: 30vh;
-  margin-left: 20vw;
-  transform: rotate(180deg);
+  width: 580px;
+  height: 400px;
+  position: absolute;
+  margin-top: 30.5vh;
+  margin-left: 13.5vw;
 }

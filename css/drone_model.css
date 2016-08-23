@@ -5,7 +5,7 @@
 
 .drone_model img {
   position: absolute;
-  width:65vw;
+  width:70vw;
 }
 
 #modelbk {
@@ -16,97 +16,97 @@
 
 #top_screws {
   z-index: 16;
-  left: 20vw;
+  left: 15vw;
   top: 25vh;
 }
 
 #top_plate {
   z-index: 15;
-  left: 20vw;
+  left: 15vw;
   top: 22vh;
 }
 
 #front_polls {
   z-index: 14;
-  left: 20vw;
+  left: 15vw;
   top: 27.5vh;
 }
 
 #camera_holder {
   z-index: 13;
-  left: 20vw;
+  left: 15vw;
   top: 14.5vh;
 }
 
 #camera {
   z-index: 12;
-  left: 20vw;
+  left: 15vw;
   top: 3.5vh;
 }
 
 
 #battery_plastic {
   z-index: 11;
-  left: 20vw;
+  left: 15vw;
   top: 3.5vh;
 }
 
 #battey_plate {
   z-index: 10;
-  left: 20vw;
+  left: 15vw;
   top: 15.5vh;
 }
 
 #battery {
   z-index: 9;
-  left: 20vw;
+  left: 15vw;
   top: 13.5vh;
 }
 
 #back_polls {
   z-index: 8;
-  left: 20vw;
+  left: 15vw;
   top: 25.5vh;
 }
 
 #motors {
   z-index: 7;
-  left: 20vw;
+  left: 15vw;
   top: 21.5vh;
 }
 
 #main_plate {
   z-index: 6;
-  left: 20vw;
+  left: 15vw;
   top: 17.5vh;
 }
 
 #antenna {
   z-index: 5;
-  left: 20vw;
+  left: 15vw;
   top: 19.5vh;
 }
 
 #bottom_plastic {
   z-index: 4;
-  left: 20vw;
+  left: 15vw;
   top: 3.5vh;
 }
 
 #electronics {
   z-index: 3;
-  left: 20vw;
+  left: 15vw;
   top: 11.5vh;
 }
 
 #down_plate {
   z-index: 2;
-  left: 20vw;
+  left: 15vw;
   top: -1.5vh;
 }
 
 #bottom_screws {
   z-index: 1;
-  left: 20vw;
+  left: 15vw;
   top: 1.5vh;
 }
