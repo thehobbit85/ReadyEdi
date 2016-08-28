@@ -20,4 +20,19 @@ $(document).ready(function() {
     keyboard: false
   })
 
+  $('#logo').click(function () {
+    var body = document.body
+    var html = document.documentElement
+    var height = Math.max(body.scrollHeight, body.offsetHeight,html.clientHeight, html.scrollHeight, html.offsetHeight)
+    var pagePosition = body.scrollTop
+    var time = 6000
+    var speed = (pagePosition / height ) * time
+
+    console.log(height, pagePosition)
+    $('body,html').animate({
+      scrollTop: 0
+    }, speed)
+    return false
+  })
+
 })
