@@ -61,6 +61,13 @@ body {
   top: 1.5vw;
 }
 
+#volume {
+  max-height: 5vh;
+  position: absolute;
+  right: 5vw;
+  top: 2vw;
+}
+
 .vertical-center {
   min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
   min-height: 100vh; /* These two lines are counted as one :-)       */
